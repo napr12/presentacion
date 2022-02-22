@@ -1,0 +1,58 @@
+@import "variables";
+.main {
+    background-image: linear-gradient(to bottom, $backgroundPrimario, $backgroundPrimario, $backgroundPrimario, $backgroundSecundario);
+    font-family: 'DM Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    color: $text;
+    display: grid;
+    grid-template-areas: " inicio " " trabajos " " habilidades " " estudios ";
+    grid-template-columns: 50vw;
+    justify-content: space-around;
+    &__section {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        &--h2 {
+            display: inline-block;
+            border-bottom: 2px solid;
+        }
+        &__article {
+            &--li {
+                list-style: decimal;
+                &--a {
+                    text-decoration: none;
+                    &:visited {
+                        color: $visited;
+                    }
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+                &--li {
+                    list-style: none;
+                    display: inline-block;
+                }
+            }
+            &--img {
+                display: inline-block;
+                width: 20vw;
+            }
+        }
+    }
+}
+
+.inicio {
+    grid-area: inicio;
+}
+
+.trabajos {
+    grid-area: trabajos;
+}
+
+.habilidades {
+    grid-area: habilidades;
+}
+
+.estudios {
+    grid-area: estudios;
+}

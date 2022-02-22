@@ -1,0 +1,155 @@
+.header {
+    padding-top: 1em;
+    background: #22577E;
+    font-family: 'DM Sans', sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+  }
+  
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .header__nav__h1 {
+    margin-left: 1em;
+  }
+  
+  .header__nav__h1:hover {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  
+  .header__nav__h1--a {
+    color: #F6F2D4;
+    text-decoration: none;
+  }
+  
+  .header__nav--elementoLista {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .header__nav--elementoLista:hover {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  
+  .header__nav--itemLista {
+    text-decoration: none;
+    color: #F6F2D4;
+  }
+  
+  .header__nav--button {
+    display: none;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .header__nav--ul {
+      display: none;
+    }
+    .header__nav--button {
+      display: block;
+      background: #22577E;
+      border: none;
+      margin-right: 1em;
+    }
+    .header__nav--icon {
+      font-size: 2em;
+    }
+    .cierraMenu {
+      display: none;
+    }
+  }
+  
+  .main {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5584AC), color-stop(#5584AC), color-stop(#5584AC), to(#95D1CC));
+    background-image: linear-gradient(to bottom, #5584AC, #5584AC, #5584AC, #95D1CC);
+    font-family: 'DM Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    color: #F6F2D4;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: " inicio " " trabajos " " habilidades " " estudios ";
+    -ms-grid-columns: 50vw;
+        grid-template-columns: 50vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .main__section {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  .main__section--h2 {
+    display: inline-block;
+    border-bottom: 2px solid;
+  }
+  
+  .main__section__article--li {
+    list-style: decimal;
+  }
+  
+  .main__section__article--li--a {
+    text-decoration: none;
+  }
+  
+  .main__section__article--li--a:visited {
+    color: #9dd665;
+  }
+  
+  .main__section__article--li--a:hover {
+    color: #1cd967;
+  }
+  
+  .main__section__article--li--li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .main__section__article--img {
+    display: inline-block;
+    width: 20vw;
+  }
+  
+  .inicio {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: inicio;
+  }
+  
+  .trabajos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: trabajos;
+  }
+  
+  .habilidades {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: habilidades;
+  }
+  
+  .estudios {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: estudios;
+  }
+  
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  /*# sourceMappingURL=main.css.map */

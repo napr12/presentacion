@@ -1,0 +1,60 @@
+@import "./variables";
+.header {
+    padding-top: 1em;
+    background: $colorHeader;
+    font-family: 'DM Sans', sans-serif;
+    position: sticky;
+    top: 0%;
+    &__nav {
+        &__h1 {
+            margin-left: 1em;
+            &:hover {
+                transform: rotate($rotacion);
+            }
+            &--a {
+                color: $text;
+                text-decoration: none;
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        &--elementoLista {
+            display: inline-block;
+            margin-right: 1rem;
+            &:hover {
+                transform: rotate($rotacion);
+            }
+        }
+        &--itemLista {
+            text-decoration: none;
+            color: $text;
+        }
+        &--button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        &__nav {
+            &--ul {
+                display: none;
+            }
+            &--button {
+                display: block;
+                background: $colorHeader;
+                border: none;
+                margin-right: 1em;
+            }
+            &--icon {
+                font-size: 2em;
+            }
+        }
+    }
+    .cierraMenu {
+        display: none;
+    }
+}
